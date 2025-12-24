@@ -1,0 +1,46 @@
+[project]
+name = "qualys_was_sdk"
+version = "0.1.0"
+description = "A SDK for qualys API"
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "MIT" }
+authors = [
+  { name = "Sn0arlax", email = "snoarsec@gmail.com" },
+]
+keywords = ["qualys", "was", "vulnerability", "diff", "security"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "Topic :: Security",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "certifi==2025.11.12",
+    "charset-normalizer==3.4.4",
+    "DateTime==6.0",
+    "idna==3.11",
+    "lxml==6.0.2",
+    "prettytable==3.17.0",
+    "pytz==2025.2",
+    "requests==2.32.5",
+    "urllib3==2.6.2",
+    "wcwidth==0.2.14",
+    "zope.interface==8.1.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/snoarlax/qualyswas_pythonSDK"
+Repository = "https://github.com/snoarlax/qualyswas_pythonSDK"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["qualys_was_sdk*"]
